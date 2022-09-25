@@ -1,0 +1,12 @@
+package 幼儿园管理系统;
+import java.util.ArrayList;
+public class Text{
+public static void main(String[] args) throws Exception {
+	  IParams params = SchoolSystem.parse();
+	   ArrayList<Integer> plan = params. getPlanSignUp ();
+       SchoolSystem sc = new SchoolSystem (params.getBig(), params.getMedium(),params.getSmall());
+        for (int i = 0; i < plan.size(); i++) {
+            sc. addStudent (plan.get(i));
+        }
+        sc.print();
+}}
